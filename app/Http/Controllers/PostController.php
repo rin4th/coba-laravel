@@ -19,7 +19,8 @@ class PostController extends Controller
 
         return view('post', [
             "title" => "Single Post",
-            "article" => $post
+            "article" => $post,
+            "category" => $post->category_id
         ]);
     }
 }
